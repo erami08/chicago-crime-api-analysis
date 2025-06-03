@@ -74,6 +74,6 @@ for _, row in map_df.iterrows():
 crime_map.save("CrimeData/chicago_map.html")
 print("🗺️ Map saved to CrimeData/chicago_map.html")
 
-# === 8. FILTERED VIOLENT CRIMES (Optional) ===
+# === 8. FILTERED VIOLENT CRIMES ===
 violent = df[df['primary_type'].isin(['ASSAULT', 'BATTERY', 'HOMICIDE', 'ROBBERY'])]
 print(f"\n🔍 Violent Crimes Found: {len(violent)}")
